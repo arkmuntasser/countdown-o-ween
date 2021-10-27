@@ -45,7 +45,7 @@ function Canvas(props) {
 		ctx.fill();
 
 		// Write top text
-		ctx.font = '24px arial italic';
+		ctx.font = '26px arial bold italic';
 		ctx.fillStyle = '#fff';
 		ctx.fillText(days + 1, canvas.width / 3.1, canvas.height / 2.14);
 
