@@ -32,13 +32,8 @@
   background: #fff;
 }
 
-.download:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .title {
   text-align: center;
-  /* font-style: italic; */
   font-weight: 700;
   font-size: 2rem;
   color: #fff;
