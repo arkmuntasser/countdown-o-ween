@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import { useEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import { getYear, isBefore, differenceInCalendarDays } from 'date-fns';
 import styles from '../styles/Home.module.css'
 
@@ -9,8 +9,7 @@ function Canvas(props) {
 	const canvasRef = useRef(null);
 	const imageRef = useRef(null);
 
-	useEffect(() => {
-
+	useLayoutEffect(() => {
 		const currentDate = new Date();
 		const currentYear = getYear(currentDate) ;
 
@@ -45,7 +44,7 @@ function Canvas(props) {
 		ctx.fill();
 
 		// Write top text
-		ctx.font = '26px arial bold italic';
+		ctx.font = '28px arial bold';
 		ctx.fillStyle = '#fff';
 		ctx.fillText(days + 1, canvas.width / 3.1, canvas.height / 2.14);
 
