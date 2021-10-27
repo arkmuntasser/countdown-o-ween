@@ -71,7 +71,7 @@ function Canvas(props) {
 	return (
 		<section className={styles.widget}>
 			<h1 className={styles.title}>Countdown-o-ween</h1>
-			<img ref={imageRef} src="/meme.jpg" hidden/>
+			<img ref={imageRef} src="/meme.jpg"/>
 			<canvas className={styles.canvas} ref={canvasRef} {...props}></canvas>
 			<button className={styles.download} onClick={downloadImage}>Download Image</button>
 		</section>

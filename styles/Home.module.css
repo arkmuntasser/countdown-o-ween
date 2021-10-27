@@ -2,11 +2,16 @@
   display: grid;
   place-items: center;
   height: 100%;
+  padding-inline: 20px;
 }
 
 .widget {
   display: grid;
   gap: 1.5ch;
+}
+
+.widget img {
+  display: none;
 }
 
 .canvas {
