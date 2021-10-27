@@ -45,19 +45,12 @@ function Canvas(props) {
 		ctx.fill();
 
 		// Write top text
-		ctx.font = '28px arial black';
+		ctx.font = '24px arial italic';
 		ctx.fillStyle = '#fff';
-		ctx.strokeStyle = '#000';
-		ctx.lineWidth = 1.8;
 		ctx.fillText(days + 1, canvas.width / 3.1, canvas.height / 2.14);
-		ctx.strokeText(days + 1, canvas.width / 3.1, canvas.height / 2.14);
 
 		// Write bottom text
-		ctx.fillStyle = '#fff';
-		ctx.strokeStyle = '#000';
-		ctx.lineWidth = 1.8;
 		ctx.fillText(days, canvas.width / 2.3, canvas.height * .983);
-		ctx.strokeText(days, canvas.width / 2.3, canvas.height * .983);
 	}, []);
 
 	function downloadImage() {
