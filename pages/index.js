@@ -74,7 +74,7 @@ function Canvas(props) {
 				<meta name="twitter:creator" content="@arkmuntasser"/>
 				<meta name="twitter:title" content="Countdown-o-ween"/>
 				<meta name="twitter:description" content="A meme-tastic countdown until halloween every halloween"/>
-				<meta name="twitter:image" content={imageString}/>
+				<meta name="twitter:image" content="/meme.jpg"/>
 			</Head>
 		</section>
 	)
